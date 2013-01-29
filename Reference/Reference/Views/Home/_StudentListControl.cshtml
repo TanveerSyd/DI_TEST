@@ -1,0 +1,19 @@
+﻿@* Views\Product\ProductListControl.cshtml *@
+@model  IQueryable<Reference.Repository.Student>
+<table>
+    <!-- Render the table headers. -->
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+    </tr>
+    <!-- Render the name and price of each product. -->
+    @foreach (var item in Model)
+    { 
+        <tr>
+            <td>@Html.DisplayFor(model => item.FirstName)</td>
+            <td>@Html.DisplayFor(model => item.LastName)</td>
+            <td>@Html.DisplayFor(model => item.Age)</td>
+        </tr>
+    }
+</table>
