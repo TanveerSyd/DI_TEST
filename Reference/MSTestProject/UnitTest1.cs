@@ -48,7 +48,7 @@ namespace MSTestProject
 
             // Assert
             //Assert.AreEqual("Welcome to ASP.NET MVC!", result.ViewBag.Message);
-            Assert.AreEqual(4, repo.Object.GetAllStudents().Count());
+            Assert.AreEqual(3, repo.Object.GetAllStudents().Count());
         }
          [TestMethod]
         public void About()
